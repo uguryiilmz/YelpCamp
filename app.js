@@ -69,7 +69,7 @@ app.use(indexRoute)
 
 
 
-app.listen(3000,'127.0.0.1',function(){
+app.listen(process.env.port,process.env.ip,function(){
   console.log('YelpCamp Server has started')
 })
 
