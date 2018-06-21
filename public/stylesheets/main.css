@@ -1,0 +1,34 @@
+.img-responsive{
+  width:100%;
+}
+
+.thumbnail{
+  padding:0px;
+}
+
+.caption-full{
+  padding:9px;
+}
+
+.form-delete{
+  display:inline;
+}
+
+.user-label{
+  display:table-cell;
+}
+
+/* Google Maps */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
