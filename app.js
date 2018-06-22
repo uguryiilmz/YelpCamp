@@ -20,8 +20,9 @@ var   campgroundRoute=require('./routes/campground.js')
 
 
 
+mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/campGrounds" )
 //mongoose.connect("mongodb://localhost/campGrounds")
-mongoose.connect("mongodb://uguryilmaz:2562025h@ds151955.mlab.com:51955/camps")
+//mongoose.connect("mongodb://uguryilmaz:2562025h@ds151955.mlab.com:51955/camps")
 app.set("view engine", "ejs")
 app.use(methodOverRide('_method'))
 app.use(bodyParser.urlencoded({ extended: true }))
