@@ -18,9 +18,10 @@ var   campgroundRoute=require('./routes/campground.js')
 
     
 
-
-
-mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/campGrounds" )
+var dbURL=process.env.DATABASEURL || "mongodb://localhost/campGrounds"
+console.log(dbURL)
+//console.log(typeof(process.env.DATABASEURL))
+mongoose.connect(dbURL)
 //mongoose.connect("mongodb://localhost/campGrounds")
 //mongoose.connect("mongodb://uguryilmaz:2562025h@ds151955.mlab.com:51955/camps")
 app.set("view engine", "ejs")
@@ -70,7 +71,7 @@ app.use(indexRoute)
 
 var port=process.env.PORT || 3000;
 
-app.listen(port || 3000,function(){
+app.listen(port,function(){
   console.log('YelpCamp Server has started')
 })
 
