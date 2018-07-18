@@ -24,6 +24,7 @@ var Cat=mongoose.model("Cat",catSchema);
 //   }
 // })
 
+//////qweklqekl;qwekl;
 Cat.create({
   name:"Missy",
   age:12,
